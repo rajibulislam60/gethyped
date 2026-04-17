@@ -29,9 +29,9 @@ const cards = [
   },
 ];
 
-const ResponsiveHoverCards = () => {
+const HoverCard = () => {
   return (
-    <section className="bg-[#d9d2c7] py-20 lg:py-40 overflow-hidden flex justify-center items-center min-h-screen">
+    <section className="py-20 lg:py-40 overflow-hidden flex justify-center items-center min-h-screen">
       <div className="flex justify-center items-center w-full px-4">
         {cards.map((card, index) => (
           <div
@@ -44,10 +44,7 @@ const ResponsiveHoverCards = () => {
                  Show 2 on 'sm', 3 on 'lg', 4 on 'xl' */
               ${index >= 2 ? "hidden sm:block" : "block"} 
               ${index >= 3 ? "lg:hidden xl:block" : ""}
-
-              w-[160px] h-[240px]
-              sm:w-[220px] sm:h-[320px]
-              lg:w-[300px] lg:h-[400px] 
+w-[160px] h-[240px] sm:w-[220px] sm:h-[320px] lg:w-[350px] lg:h-[400px] 
 
               ${card.rotate}
               ${index !== 0 ? "0" : ""}
@@ -89,4 +86,4 @@ const ResponsiveHoverCards = () => {
   );
 };
 
-export default ResponsiveHoverCards;
+export default HoverCard;
