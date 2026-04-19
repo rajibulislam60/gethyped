@@ -32,6 +32,7 @@ const HypedSection = () => {
         {/* Header */}
         <div className="mb-10 lg:mb-15">
           <h1 className="text-[70px] md:text-[120px] font-black leading-[0.9] tracking-tight mb-8">
+            Content <br />
             dat scoort.
           </h1>
 
@@ -41,7 +42,7 @@ const HypedSection = () => {
               doelgroep. Met creatieve content die werkt en het verschil maakt.
             </p>
 
-            <button className="group flex items-center gap-3 border-2 border-black px-5 py-2.5 rounded-full font-semibold hover:bg-black hover:text-white transition">
+            <button className="hidden md:flex items-center gap-3 text-[14px] font-semibold rounded-[12px] px-4 py-2 border transition-all duration-300 hover:-rotate-6 scale-95">
               Bekijk al ons werk
               <span className="p-1.5 rounded-full bg-black text-white group-hover:bg-white group-hover:text-black transition">
                 <ArrowUpRight size={16} strokeWidth={3} />
@@ -51,48 +52,45 @@ const HypedSection = () => {
         </div>
 
         {/* Cards */}
-        <div className="grid md:grid-cols-3 gap-8 items-end">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-end">
           {/* Card 1 */}
           <div
-            className=" relative rounded-[28px] overflow-hidden border-[4px] shadow-md hover:scale-[1.02] transition"
+            className=" relative rounded-[28px] overflow-hidden border-[4px] shadow-md hover:scale-[1.02]  hidden md:flex transition-all duration-300 hover:-rotate-2 scale-95"
             style={{ borderColor: projects[0].color }}
           >
-            <img
-              src={projects[0].image}
-              className="w-full h-[420px] object-cover"
-            />
-
-            <div className="absolute bottom-0 w-full">
-              <div
-                className="h-16"
-                style={{
-                  background: projects[0].color,
-                  clipPath: "polygon(0 100%, 100% 100%, 100% 0, 0 70%)",
-                }}
+            <div className="h-[420px]">
+              <img
+                src={projects[0].image}
+                className="w-full h-full  object-cover"
               />
 
-              <div
-                className="px-6 pb-7 pt-2 text-white relative"
-                style={{ background: projects[0].color }}
-              >
-                <div className="absolute -top-10 right-5 bg-white text-black p-2 rounded-full shadow hover:rotate-45 transition">
-                  <ArrowUpRight size={18} strokeWidth={3} />
+              <div className="absolute bottom-0 w-full p-3">
+                <div
+                  className="px-6 pb-7 pt-26 text-white relative rounded-b-3xl"
+                  style={{
+                    background: projects[0].color,
+                    clipPath: "polygon(0 45%, 100% 0, 100% 100%, 0 100%)",
+                  }}
+                >
+                  <div className="absolute top-8 right-8 bg-white text-black p-2 rounded-full shadow hover:rotate-45 transition">
+                    <ArrowUpRight size={18} strokeWidth={3} />
+                  </div>
+
+                  <h3 className="text-[22px] font-extrabold leading-tight mb-5 pr-8">
+                    {projects[0].title}
+                  </h3>
+
+                  <span className="text-[10px] font-bold tracking-widest uppercase bg-white/20 px-3 py-1 rounded">
+                    {projects[0].client}
+                  </span>
                 </div>
-
-                <h3 className="text-[22px] font-extrabold leading-tight mb-5 pr-8">
-                  {projects[0].title}
-                </h3>
-
-                <span className="text-[10px] font-bold tracking-widest uppercase bg-white/20 px-3 py-1 rounded">
-                  {projects[0].client}
-                </span>
               </div>
             </div>
           </div>
 
           {/* Card 2 */}
           <div
-            className="md:-translate-y-20 relative rounded-[28px] overflow-hidden border-[4px] shadow-md hover:scale-[1.02] transition"
+            className="md:-translate-y-20  relative rounded-[28px] overflow-hidden border-[4px] shadow-md hover:scale-[1.02]  hidden md:flex transition-all duration-300 hover:-rotate-2 scale-95"
             style={{ borderColor: projects[1].color }}
           >
             <img
@@ -100,20 +98,15 @@ const HypedSection = () => {
               className="w-full h-[420px] object-cover"
             />
 
-            <div className="absolute bottom-0 w-full">
+            <div className="absolute bottom-0 w-full p-3">
               <div
-                className="h-16"
+                className="px-6 pb-7 pt-26 text-white relative rounded-b-3xl"
                 style={{
                   background: projects[1].color,
-                  clipPath: "polygon(0 100%, 100% 100%, 100% 0, 0 70%)",
+                  clipPath: "polygon(0 45%, 100% 0, 100% 100%, 0 100%)",
                 }}
-              />
-
-              <div
-                className="px-6 pb-7 pt-2 text-white relative"
-                style={{ background: projects[1].color }}
               >
-                <div className="absolute -top-10 right-5 bg-white text-black p-2 rounded-full shadow hover:rotate-45 transition">
+                <div className="absolute top-8 right-8 bg-white text-black p-2 rounded-full shadow hover:rotate-45 transition">
                   <ArrowUpRight size={18} strokeWidth={3} />
                 </div>
 
@@ -130,7 +123,7 @@ const HypedSection = () => {
 
           {/* Card 3 */}
           <div
-            className="md:-translate-y-40 relative rounded-[28px] overflow-hidden border-[4px] shadow-md hover:scale-[1.02] transition"
+            className="md:-translate-y-40  relative rounded-[28px] overflow-hidden border-[4px] shadow-md hover:scale-[1.02]  hidden md:flex transition-all duration-300 hover:-rotate-2 scale-95"
             style={{ borderColor: projects[2].color }}
           >
             <img
@@ -138,20 +131,15 @@ const HypedSection = () => {
               className="w-full h-[420px] object-cover"
             />
 
-            <div className="absolute bottom-0 w-full">
+            <div className="absolute bottom-0 w-full p-3">
               <div
-                className="h-16"
+                className="px-6 pb-7 pt-26 text-white relative rounded-b-3xl"
                 style={{
                   background: projects[2].color,
-                  clipPath: "polygon(0 100%, 100% 100%, 100% 0, 0 70%)",
+                  clipPath: "polygon(0 45%, 100% 0, 100% 100%, 0 100%)",
                 }}
-              />
-
-              <div
-                className="px-6 pb-7 pt-2 text-white relative"
-                style={{ background: projects[2].color }}
               >
-                <div className="absolute -top-10 right-5 bg-white text-black p-2 rounded-full shadow hover:rotate-45 transition">
+                <div className="absolute top-8 right-8 bg-white text-black p-2 rounded-full shadow hover:rotate-45 transition">
                   <ArrowUpRight size={18} strokeWidth={3} />
                 </div>
 
