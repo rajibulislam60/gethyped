@@ -2,6 +2,7 @@ import React from "react";
 import Navbar from "../components/Navbar";
 import Hero from "./../components/Hero";
 import ScrollAnimation from "../components/ScrollAnimation";
+import HypedSection from "./../components/HypedSection";
 
 const Home = () => {
   return (
@@ -9,6 +10,7 @@ const Home = () => {
       <Navbar className="sticky" />
       <Hero />
       <ScrollAnimation />
+      <HypedSection />
     </div>
   );
 };
