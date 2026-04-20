@@ -4,6 +4,7 @@ import Hero from "./../components/Hero";
 import ScrollAnimation from "../components/ScrollAnimation";
 import HypedSection from "./../components/HypedSection";
 import Footer from "../components/Footer";
+import AdArea from "../components/AdArea";
 
 const Home = () => {
   return (
@@ -12,6 +13,7 @@ const Home = () => {
       <Hero />
       <ScrollAnimation />
       <HypedSection />
+      <AdArea />
       <Footer />
     </div>
   );
