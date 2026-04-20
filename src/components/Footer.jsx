@@ -54,9 +54,9 @@ const Footer = () => {
 
           {/* Background Section */}
           <div
-            className="relative bg-[#e6e2d3] py-16 md:py-26"
+            className="relative bg-[#e6e2d3] py-10 md:py-16"
             style={{
-              clipPath: "polygon(0 40%, 100% 0, 100% 100%, 0% 100%)",
+              clipPath: "polygon(0 55%, 100% 0, 100% 100%, 0% 100%)",
             }}
           >
             <div className="w-full mx-auto flex justify-between gap-10 md:gap-0 items-start md:items-end px-4 md:px-0">
@@ -66,65 +66,66 @@ const Footer = () => {
                 alt="Footer Logo"
                 className="w-[180px] md:w-[300px] mx-auto md:mx-0"
               />
-              <div className="flex gap-12 items-center lg:pr-12">
-                {/* Middle Section */}
-                <div className="flex flex-col gap-8  items-center md:items-start">
-                  {/* Desktop Menu */}
-                  <div className="hidden md:block ">
-                    <ul className="flex gap-1">
-                      {menuItems.map((item, i) => (
-                        <NavItem key={i} label={item} />
-                      ))}
-                    </ul>
+              <div className="lg:pr-12">
+                <div className="flex gap-12 items-center ">
+                  {/* Middle Section */}
+                  <div className="flex flex-col gap-8  items-center md:items-start">
+                    {/* Desktop Menu */}
+                    <div className="hidden md:block ">
+                      <ul className="flex gap-1">
+                        {menuItems.map((item, i) => (
+                          <NavItem key={i} label={item} />
+                        ))}
+                      </ul>
+                    </div>
+
+                    {/* Social */}
+                    <div className="flex flex-col sm:flex-row items-center gap-3 md:gap-4">
+                      <span className="font-bold text-sm">Follow us</span>
+
+                      <div className="flex gap-3">
+                        {[FaLinkedinIn, FaTiktok, FaInstagram, FaYoutube].map(
+                          (Icon, i) => (
+                            <a
+                              key={i}
+                              href="#"
+                              className="p-2 bg-white rounded-full shadow-sm hover:scale-110 transition-transform"
+                            >
+                              <Icon size={18} />
+                            </a>
+                          ),
+                        )}
+                      </div>
+                    </div>
                   </div>
 
-                  {/* Social */}
-                  <div className="flex flex-col sm:flex-row items-center gap-3 md:gap-4">
-                    <span className="font-bold text-sm">Follow us</span>
+                  {/* Contact */}
+                  <div className="text-sm space-y-6 text-center md:text-left">
+                    <div>
+                      <h4 className="font-bold mb-1">Contact</h4>
+                      <p>info@gethyped.nl</p>
+                      <p>+31 6 1533 7496</p>
+                    </div>
 
-                    <div className="flex gap-3">
-                      {[FaLinkedinIn, FaTiktok, FaInstagram, FaYoutube].map(
-                        (Icon, i) => (
-                          <a
-                            key={i}
-                            href="#"
-                            className="p-2 bg-white rounded-full shadow-sm hover:scale-110 transition-transform"
-                          >
-                            <Icon size={18} />
-                          </a>
-                        ),
-                      )}
+                    <div>
+                      <h4 className="font-bold mb-1">Adres</h4>
+                      <p>Beltrumsestraat 6,</p>
+                      <p>7141 AL Groenlo</p>
                     </div>
                   </div>
                 </div>
-
-                {/* Contact */}
-                <div className="text-sm space-y-6 text-center md:text-left">
-                  <div>
-                    <h4 className="font-bold mb-1">Contact</h4>
-                    <p>info@gethyped.nl</p>
-                    <p>+31 6 1533 7496</p>
-                  </div>
-
-                  <div>
-                    <h4 className="font-bold mb-1">Adres</h4>
-                    <p>Beltrumsestraat 6,</p>
-                    <p>7141 AL Groenlo</p>
-                  </div>
+                {/* Bottom Bar */}
+                <div className="pt-4 flex flex-col md:flex-row justify-between gap-3 text-[10px] uppercase tracking-widest opacity-60 text-center md:text-left">
+                  <p>© 2025 Get Hyped</p>
+                  <p>© Design by Dylan</p>
+                  <p>Privacyvoorwaarden</p>
                 </div>
               </div>
-            </div>
-
-            {/* Bottom Bar */}
-            <div className="max-w-7xl mx-auto mt-12 md:mt-16 pt-6 border-t border-black/10 flex flex-col md:flex-row justify-between gap-3 text-[10px] uppercase tracking-widest opacity-60 text-center md:text-left">
-              <p>© 2025 Get Hyped</p>
-              <p>© Design by Dylan</p>
-              <p>Privacyvoorwaarden</p>
             </div>
           </div>
 
           {/* Badge */}
-          <div className="absolute right-6 md:right-20 bottom-[30%] md:bottom-[50%] hidden lg:block">
+          <div className="absolute right-6 md:right-20 bottom-[30%] md:bottom-[40%] hidden lg:block">
             <div className="w-20 md:w-24 h-20 md:h-24 bg-[#f8c1ff] rounded-full flex items-center justify-center border-2 border-black rotate-12">
               <span className="font-black text-xl md:text-2xl">GH</span>
             </div>
