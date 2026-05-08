@@ -1,16 +1,112 @@
-# React + Vite
+# GetHyped 🚀
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern and responsive web application built with React.js and Tailwind CSS. GetHyped delivers a clean UI, smooth animations, and an engaging user experience designed for modern web users.
 
-Currently, two official plugins are available:
+🌐 **Live Demo:**  
+https://gethy.netlify.app/
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## 📌 Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- ⚡ Modern and responsive UI
+- 🎨 Clean and attractive design
+- 📱 Fully mobile responsive
+- ✨ Smooth animations and transitions
+- 🌙 Dark themed interface
+- 🧩 Reusable React components
+- 🚀 Fast performance with Vite
+- 🎯 User-friendly experience
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠️ Technologies Used
+
+- ⚛️ React.js
+- 🎨 Tailwind CSS
+- 💨 Vite
+- 🔥 JavaScript (ES6+)
+- 🎯 React Icons
+
+---
+
+## 📂 Project Structure
+
+```bash
+gethyped/
+├── public/
+├── src/
+│   ├── components/
+│   ├── pages/
+│   ├── assets/
+│   ├── App.jsx
+│   └── main.jsx
+├── package.json
+└── vite.config.js
+```
+
+---
+
+## 🚀 Installation & Setup
+
+Clone the repository:
+
+```bash
+git clone https://github.com/rajibulislam60/gethyped.git
+```
+
+Navigate to the project folder:
+
+```bash
+cd gethyped
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Run the development server:
+
+```bash
+npm run dev
+```
+
+---
+
+## 📸 Preview
+
+Add your project screenshots here.
+
+```md
+![Preview](your-image-link)
+```
+
+---
+
+## 🎯 Future Improvements
+
+- Add backend integration
+- Authentication system
+- Dashboard functionality
+- More advanced animations
+- SEO optimization
+
+---
+
+## 👨‍💻 Author
+
+### Md. Rajibul Islam Rajib
+
+---
+
+## ⭐ Support
+
+If you like this project, give it a ⭐ on GitHub and support the project.
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License.
